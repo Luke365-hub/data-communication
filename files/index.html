@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Communication – Luke Mohamed Ibrahim Kemokai</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">DataComm</div>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#data-comm">Data Communication</a></li>
+        <li><a href="#telegraph">Telegraph</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#inspiration">Inspiration</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">PUIS/24210046 &nbsp;·&nbsp; Industrial Software Engineering</p>
+      <h1>Luke Mohamed<br/>Ibrahim Kemokai</h1>
+      <p class="hero-sub">A Deep Dive into Data Communication</p>
+      <a href="#about" class="btn-hero">Explore</a>
+    </div>
+    <div class="hero-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ME ===== -->
+  <section id="about" class="section about-section">
+    <div class="section-label">01 &mdash; About Me</div>
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <img src="profile.jpg" alt="Luke Mohamed Ibrahim Kemokai" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Luke+Kemokai&size=400&background=1a1a2e&color=e8c77d&font-size=0.35&bold=true'"/>
+        <div class="img-border"></div>
+      </div>
+      <div class="about-text">
+        <h2>Hello, I'm Luke.</h2>
+        <p>
+          I am a passionate and driven Industrial Software Engineering student at Pentecost University, 
+          where I am shaping my future at the intersection of technology, innovation, and real-world problem solving. 
+          From the moment I wrote my first line of code, I knew this was more than a career path — it was a calling.
+        </p>
+        <p>
+          I thrive on understanding how systems communicate, how data travels across networks, and how the invisible 
+          architecture of the digital world keeps everything connected. My academic journey has equipped me with a solid 
+          foundation in data communication principles, network protocols, signal transmission, and modern communication technologies.
+        </p>
+        <p>
+          Beyond the classroom, I am a curious thinker, a relentless learner, and someone who believes that technology 
+          has the power to transform lives — especially across Africa. I am committed to using my skills to build 
+          meaningful solutions that matter.
+        </p>
+        <div class="about-tags">
+          <span>Pentecost University</span>
+          <span>Industrial Software Engineering</span>
+          <span>Data Communication</span>
+          <span>Networking</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DATA COMMUNICATION ===== -->
+  <section id="data-comm" class="section datacomm-section">
+    <div class="section-label">02 &mdash; Data Communication</div>
+    <h2 class="section-title">What Is Data Communication?</h2>
+    <p class="section-intro">
+      Data communication is the exchange of digital information between two or more devices through a transmission medium. 
+      It forms the backbone of the modern digital world — from a simple text message to complex cloud computing systems.
+    </p>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">📡</div>
+        <h3>Components</h3>
+        <p>A data communication system has five key components: <strong>Sender</strong>, <strong>Receiver</strong>, <strong>Message</strong>, <strong>Transmission Medium</strong>, and <strong>Protocol</strong>. Each plays a vital role in ensuring data is sent and received accurately.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔁</div>
+        <h3>Transmission Modes</h3>
+        <p>Data can be transmitted in three modes: <strong>Simplex</strong> (one direction only), <strong>Half-Duplex</strong> (both directions but not simultaneously), and <strong>Full-Duplex</strong> (both directions at the same time).</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌐</div>
+        <h3>Network Types</h3>
+        <p>Networks are classified by size and scope: <strong>LAN</strong> (Local Area Network), <strong>MAN</strong> (Metropolitan Area Network), and <strong>WAN</strong> (Wide Area Network). The internet is the largest WAN in existence.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📶</div>
+        <h3>Signals</h3>
+        <p>Data is carried by <strong>analog signals</strong> (continuous waves) or <strong>digital signals</strong> (discrete binary values). Bandwidth, frequency, and noise are critical factors that affect signal quality and data speed.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h3>Protocols</h3>
+        <p>Protocols are the rules governing data exchange. Key protocols include <strong>TCP/IP</strong>, <strong>HTTP/HTTPS</strong>, <strong>FTP</strong>, and <strong>SMTP</strong>. The OSI model provides a 7-layer framework for understanding these protocols.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Transmission Media</h3>
+        <p>Data travels through <strong>guided media</strong> (twisted pair, coaxial cable, fiber optics) or <strong>unguided media</strong> (radio waves, microwaves, infrared). Fiber optics offers the highest speed and least interference.</p>
+      </div>
+    </div>
+
+    <div class="osi-box">
+      <h3>The OSI Model – 7 Layers</h3>
+      <div class="osi-layers">
+        <div class="osi-layer l7"><span class="ln">7</span> Application Layer <span class="ld">– User interface (HTTP, FTP, SMTP)</span></div>
+        <div class="osi-layer l6"><span class="ln">6</span> Presentation Layer <span class="ld">– Data formatting & encryption (SSL)</span></div>
+        <div class="osi-layer l5"><span class="ln">5</span> Session Layer <span class="ld">– Session management</span></div>
+        <div class="osi-layer l4"><span class="ln">4</span> Transport Layer <span class="ld">– Reliable delivery (TCP, UDP)</span></div>
+        <div class="osi-layer l3"><span class="ln">3</span> Network Layer <span class="ld">– Routing & IP addressing</span></div>
+        <div class="osi-layer l2"><span class="ln">2</span> Data Link Layer <span class="ld">– Node-to-node delivery (MAC)</span></div>
+        <div class="osi-layer l1"><span class="ln">1</span> Physical Layer <span class="ld">– Bits over physical medium</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TELEGRAPH DIAGRAM ===== -->
+  <section id="telegraph" class="section telegraph-section">
+    <div class="section-label">03 &mdash; The Telegraph</div>
+    <h2 class="section-title">The Telegraph: Pioneer of Data Communication</h2>
+    <p class="section-intro">
+      The electric telegraph, invented in the 1830s–1840s, was the first system to transmit information 
+      electronically over long distances. It laid the groundwork for all modern data communication systems.
+    </p>
+
+    <!-- SVG Telegraph Diagram -->
+    <div class="telegraph-diagram">
+      <svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" class="telegraph-svg">
+        <!-- Background -->
+        <rect width="900" height="420" fill="#0d1117" rx="16"/>
+
+        <!-- Title -->
+        <text x="450" y="38" text-anchor="middle" font-family="Playfair Display, serif" font-size="20" fill="#e8c77d" font-weight="700">Electric Telegraph System</text>
+
+        <!-- SENDER STATION -->
+        <rect x="40" y="70" width="180" height="240" rx="10" fill="#1a1f2e" stroke="#e8c77d" stroke-width="1.5"/>
+        <text x="130" y="100" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#e8c77d" font-weight="600">SENDER STATION</text>
+
+        <!-- Key (telegraph key) -->
+        <rect x="75" y="115" width="110" height="14" rx="4" fill="#2a3050"/>
+        <rect x="110" y="108" width="40" height="8" rx="3" fill="#e8c77d"/>
+        <text x="130" y="152" text-anchor="middle" font-family="DM Sans" font-size="11" fill="#aaa">Telegraph Key</text>
+
+        <!-- Battery sender -->
+        <rect x="80" y="165" width="100" height="36" rx="5" fill="#2a3050" stroke="#4a90d9" stroke-width="1"/>
+        <text x="130" y="180" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#4a90d9">⚡ Battery</text>
+        <text x="130" y="194" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#888">Power Source</text>
+
+        <!-- Morse encoder -->
+        <rect x="80" y="215" width="100" height="36" rx="5" fill="#2a3050" stroke="#e8c77d" stroke-width="1"/>
+        <text x="130" y="230" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#e8c77d">▪▪▪ Encoder</text>
+        <text x="130" y="244" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#888">Morse Code</text>
+
+        <!-- Morse dots/dashes -->
+        <text x="130" y="285" text-anchor="middle" font-family="Space Mono, monospace" font-size="12" fill="#e8c77d">• — • •</text>
+        <text x="130" y="300" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#666">Encoded Signal</text>
+
+        <!-- TRANSMISSION LINE -->
+        <!-- Poles and wire -->
+        <!-- Pole 1 -->
+        <rect x="248" y="140" width="8" height="110" rx="2" fill="#5c4a1e"/>
+        <rect x="240" y="138" width="24" height="6" rx="2" fill="#7a6028"/>
+        <circle cx="252" cy="141" r="6" fill="#2a3050" stroke="#e8c77d" stroke-width="1"/>
+
+        <!-- Pole 2 -->
+        <rect x="428" y="140" width="8" height="110" rx="2" fill="#5c4a1e"/>
+        <rect x="420" y="138" width="24" height="6" rx="2" fill="#7a6028"/>
+        <circle cx="432" cy="141" r="6" fill="#2a3050" stroke="#e8c77d" stroke-width="1"/>
+
+        <!-- Pole 3 -->
+        <rect x="608" y="140" width="8" height="110" rx="2" fill="#5c4a1e"/>
+        <rect x="600" y="138" width="24" height="6" rx="2" fill="#7a6028"/>
+        <circle cx="612" cy="141" r="6" fill="#2a3050" stroke="#e8c77d" stroke-width="1"/>
+
+        <!-- Wire line (animated dashes) -->
+        <line x1="220" y1="141" x2="672" y2="141" stroke="#e8c77d" stroke-width="2.5" stroke-dasharray="10,4"/>
+
+        <!-- Signal pulses travelling along wire -->
+        <circle cx="300" cy="141" r="5" fill="#4a90d9" opacity="0.9">
+          <animate attributeName="cx" from="230" to="670" dur="2.5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" from="1" to="0.3" dur="2.5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="400" cy="141" r="4" fill="#e8c77d" opacity="0.7">
+          <animate attributeName="cx" from="230" to="670" dur="2.5s" begin="0.8s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" from="1" to="0.3" dur="2.5s" begin="0.8s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="500" cy="141" r="5" fill="#4a90d9" opacity="0.9">
+          <animate attributeName="cx" from="230" to="670" dur="2.5s" begin="1.6s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" from="1" to="0.3" dur="2.5s" begin="1.6s" repeatCount="indefinite"/>
+        </circle>
+
+        <!-- Label: Transmission Line -->
+        <text x="450" y="130" text-anchor="middle" font-family="DM Sans" font-size="11" fill="#888">Electrical Transmission Line (Wire)</text>
+
+        <!-- Ground lines -->
+        <line x1="252" y1="250" x2="252" y2="270" stroke="#888" stroke-width="1.5"/>
+        <line x1="242" y1="270" x2="262" y2="270" stroke="#888" stroke-width="1.5"/>
+        <line x1="245" y1="275" x2="259" y2="275" stroke="#888" stroke-width="1"/>
+        <line x1="248" y1="280" x2="256" y2="280" stroke="#888" stroke-width="0.8"/>
+
+        <line x1="432" y1="250" x2="432" y2="270" stroke="#888" stroke-width="1.5"/>
+        <line x1="422" y1="270" x2="442" y2="270" stroke="#888" stroke-width="1.5"/>
+        <line x1="425" y1="275" x2="439" y2="275" stroke="#888" stroke-width="1"/>
+        <line x1="428" y1="280" x2="436" y2="280" stroke="#888" stroke-width="0.8"/>
+
+        <line x1="612" y1="250" x2="612" y2="270" stroke="#888" stroke-width="1.5"/>
+        <line x1="602" y1="270" x2="622" y2="270" stroke="#888" stroke-width="1.5"/>
+        <line x1="605" y1="275" x2="619" y2="275" stroke="#888" stroke-width="1"/>
+        <line x1="608" y1="280" x2="616" y2="280" stroke="#888" stroke-width="0.8"/>
+
+        <!-- RECEIVER STATION -->
+        <rect x="672" y="70" width="190" height="240" rx="10" fill="#1a1f2e" stroke="#4a90d9" stroke-width="1.5"/>
+        <text x="767" y="100" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#4a90d9" font-weight="600">RECEIVER STATION</text>
+
+        <!-- Sounder -->
+        <rect x="707" y="115" width="120" height="36" rx="5" fill="#2a3050" stroke="#4a90d9" stroke-width="1"/>
+        <text x="767" y="130" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#4a90d9">🔊 Sounder</text>
+        <text x="767" y="144" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#888">Clicks signal</text>
+
+        <!-- Decoder -->
+        <rect x="707" y="165" width="120" height="36" rx="5" fill="#2a3050" stroke="#e8c77d" stroke-width="1"/>
+        <text x="767" y="180" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#e8c77d">⚙ Decoder</text>
+        <text x="767" y="194" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#888">Morse → Text</text>
+
+        <!-- Paper tape / output -->
+        <rect x="707" y="215" width="120" height="36" rx="5" fill="#2a3050" stroke="#aaa" stroke-width="1"/>
+        <text x="767" y="230" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#aaa">📄 Paper Tape</text>
+        <text x="767" y="244" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#888">Message Output</text>
+
+        <!-- Decoded message -->
+        <text x="767" y="285" text-anchor="middle" font-family="Space Mono" font-size="11" fill="#4a90d9">"HELLO"</text>
+        <text x="767" y="300" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#666">Decoded Message</text>
+
+        <!-- MORSE CODE KEY at bottom -->
+        <rect x="200" y="330" width="500" height="70" rx="10" fill="#1a1f2e" stroke="#333" stroke-width="1"/>
+        <text x="450" y="352" text-anchor="middle" font-family="DM Sans" font-size="12" fill="#e8c77d" font-weight="600">Morse Code Reference</text>
+        <text x="280" y="372" text-anchor="middle" font-family="Space Mono" font-size="10" fill="#aaa">A: •—</text>
+        <text x="330" y="372" text-anchor="middle" font-family="Space Mono" font-size="10" fill="#aaa">B: —•••</text>
+        <text x="390" y="372" text-anchor="middle" font-family="Space Mono" font-size="10" fill="#aaa">S: •••</text>
+        <text x="450" y="372" text-anchor="middle" font-family="Space Mono" font-size="10" fill="#aaa">O: ———</text>
+        <text x="510" y="372" text-anchor="middle" font-family="Space Mono" font-size="10" fill="#aaa">E: •</text>
+        <text x="570" y="372" text-anchor="middle" font-family="Space Mono" font-size="10" fill="#aaa">T: —</text>
+        <text x="450" y="392" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#555">SOS = • • • — — — • • •  (Universal distress signal)</text>
+
+        <!-- Arrow labels -->
+        <text x="450" y="165" text-anchor="middle" font-family="DM Sans" font-size="10" fill="#555">⟵ electrical pulses travel ⟶</text>
+      </svg>
+    </div>
+
+    <div class="telegraph-facts">
+      <div class="fact-card">
+        <h4>📅 1837</h4>
+        <p>Samuel Morse and Alfred Vail develop the electric telegraph and Morse Code</p>
+      </div>
+      <div class="fact-card">
+        <h4>🌊 1858</h4>
+        <p>First transatlantic telegraph cable laid, connecting North America and Europe</p>
+      </div>
+      <div class="fact-card">
+        <h4>💡 Legacy</h4>
+        <p>The telegraph introduced the concept of digital binary signaling — the foundation of all modern computing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO ===== -->
+  <section id="video" class="section video-section">
+    <div class="section-label">04 &mdash; Learn More</div>
+    <h2 class="section-title">Data Communication Explained</h2>
+    <p class="section-intro">Watch this video for a comprehensive visual explanation of data communication concepts.</p>
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/3b_TAYtzuho"
+        title="Data Communication Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ===== INSPIRATION ===== -->
+  <section id="inspiration" class="section inspiration-section">
+    <div class="section-label">05 &mdash; What Inspires Me</div>
+    <h2 class="section-title">My Inspiration</h2>
+    <div class="inspiration-grid">
+      <div class="inspiration-quote">
+        <blockquote>
+          "The science of today is the technology of tomorrow."
+        </blockquote>
+        <cite>— Edward Teller</cite>
+      </div>
+      <div class="inspiration-text">
+        <p>
+          I am deeply inspired by the idea that <strong>information is power</strong>. Every time data travels 
+          from one device to another — whether it's a doctor receiving test results, a student accessing 
+          learning materials, or a farmer checking weather forecasts — it changes someone's life.
+        </p>
+        <p>
+          Growing up in Ghana, I witnessed firsthand the gap between those with access to reliable 
+          communication technology and those without. That gap inspired me to pursue Industrial Software Engineering — 
+          not just to understand how systems work, but to build systems that <strong>bridge that divide</strong>.
+        </p>
+        <p>
+          I am also inspired by the pioneers of data communication — from Samuel Morse who encoded 
+          the first message, to Vint Cerf and Bob Kahn who co-created the TCP/IP protocol that powers the internet today. 
+          Their work reminds me that <strong>one idea, executed boldly, can connect the world</strong>.
+        </p>
+        <p>
+          My goal is simple: to become an engineer who doesn't just write code — but writes 
+          <strong>solutions that matter</strong> for Africa and the world.
+        </p>
+      </div>
+    </div>
+
+    <div class="inspire-pillars">
+      <div class="pillar">
+        <div class="pillar-icon">🌍</div>
+        <h4>Africa's Digital Future</h4>
+        <p>Building connectivity solutions for underserved communities</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🔬</div>
+        <h4>Curiosity & Learning</h4>
+        <p>Never stopping at the surface — always digging deeper</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🤝</div>
+        <h4>Community Impact</h4>
+        <p>Technology in service of people, not the other way around</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🚀</div>
+        <h4>Innovation</h4>
+        <p>Building what doesn't exist yet because the world needs it</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESOURCES ===== -->
+  <section id="resources" class="section resources-section">
+    <div class="section-label">06 &mdash; Resources</div>
+    <h2 class="section-title">Resources & Assignment</h2>
+    <p class="section-intro">Useful links and references for Data Communication studies.</p>
+
+    <div class="resources-grid">
+      <!-- Assignment Link (opens in new tab) -->
+      <a href="DataCommIA.docx" target="_blank" class="resource-card assignment-card">
+        <div class="rc-icon">📄</div>
+        <h3>My Assignment</h3>
+        <p>Data Communication Individual Assignment – Turnitin Copy</p>
+        <span class="rc-link">Download / View ↗</span>
+      </a>
+
+      <!-- YouTube Link -->
+      <a href="https://youtu.be/3b_TAYtzuho?si=Nv0LKnkR68OuICVF" target="_blank" class="resource-card">
+        <div class="rc-icon">▶️</div>
+        <h3>YouTube Video</h3>
+        <p>Data Communication – Full Explanation Video on YouTube</p>
+        <span class="rc-link">Watch on YouTube ↗</span>
+      </a>
+
+      <!-- External reference -->
+      <a href="https://www.geeksforgeeks.org/data-communication/" target="_blank" class="resource-card">
+        <div class="rc-icon">🌐</div>
+        <h3>GeeksForGeeks</h3>
+        <p>In-depth articles on Data Communication concepts and protocols</p>
+        <span class="rc-link">Visit Site ↗</span>
+      </a>
+
+      <!-- External reference 2 -->
+      <a href="https://www.cisco.com/c/en/us/solutions/enterprise-networks/what-is-a-computer-network.html" target="_blank" class="resource-card">
+        <div class="rc-icon">🔗</div>
+        <h3>Cisco – Networking Basics</h3>
+        <p>Official Cisco resource on computer networks and data communication</p>
+        <span class="rc-link">Visit Site ↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Luke Mohamed Ibrahim Kemokai &nbsp;|&nbsp; PUIS/24210046 &nbsp;|&nbsp; Pentecost University</p>
+    <p style="margin-top:8px; font-size:0.8rem; color:#555;">Industrial Software Engineering &nbsp;·&nbsp; Data Communication Assignment</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
